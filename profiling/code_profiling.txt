@@ -1,0 +1,31 @@
+Code Profiling Results
+============================================================
+Profiled: compute_hotel_features() + cluster_hotels()
+         63437 function calls (63009 primitive calls) in 0.395 seconds
+
+   Ordered by: cumulative time
+   List reduced from 961 to 20 due to restriction <20>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      4/3    0.000    0.000    0.395    0.132 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/IPython/core/interactiveshell.py:3665(run_code)
+        3    0.000    0.000    0.395    0.132 {built-in method builtins.exec}
+        1    0.000    0.000    0.307    0.307 /var/folders/7v/4q7r0xwd6tb59mlws6_tzcm40000gn/T/ipykernel_96398/2832236656.py:1(<module>)
+        1    0.000    0.000    0.307    0.307 /Users/adrian/Workshop/5126/Assignment1/src/benchmarking.py:27(compute_hotel_features)
+        1    0.000    0.000    0.306    0.306 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/pandas/io/sql.py:436(read_sql_query)
+        1    0.000    0.000    0.305    0.305 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/pandas/io/sql.py:2717(read_query)
+        1    0.291    0.291    0.303    0.303 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/pandas/io/sql.py:2757(_fetchall_as_list)
+        1    0.000    0.000    0.087    0.087 /Users/adrian/Workshop/5126/Assignment1/src/benchmarking.py:117(cluster_hotels)
+        2    0.000    0.000    0.076    0.038 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/sklearn/base.py:1319(wrapper)
+        1    0.000    0.000    0.074    0.074 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/sklearn/cluster/_kmeans.py:1047(fit_predict)
+        1    0.002    0.002    0.074    0.074 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/sklearn/cluster/_kmeans.py:1432(fit)
+        1    0.000    0.000    0.031    0.031 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/sklearn/cluster/_kmeans.py:916(_check_mkl_vcomp)
+       11    0.000    0.000    0.031    0.003 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/sklearn/utils/parallel.py:187(_get_threadpool_controller)
+        1    0.000    0.000    0.031    0.031 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/threadpoolctl.py:816(__init__)
+        1    0.000    0.000    0.031    0.031 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/threadpoolctl.py:967(_load_libraries)
+        1    0.001    0.001    0.031    0.031 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/threadpoolctl.py:1019(_find_libraries_with_dyld)
+      607    0.002    0.000    0.029    0.000 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/threadpoolctl.py:1143(_make_controller_from_path)
+       10    0.000    0.000    0.024    0.002 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/sklearn/utils/parallel.py:206(wrapper)
+       10    0.017    0.002    0.023    0.002 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/sklearn/cluster/_kmeans.py:629(_kmeans_single_lloyd)
+      607    0.000    0.000    0.023    0.000 /Users/adrian/Workshop/5126/Assignment1/.venv/lib/python3.13/site-packages/threadpoolctl.py:545(_realpath)
+
+

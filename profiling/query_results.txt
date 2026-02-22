@@ -1,0 +1,39 @@
+Query Profiling Results
+============================================================
+                                           Query  With Index (ms)  No Index (ms) Speedup
+                      Q1: Count reviews per year             4.91          50.67   10.3x
+Q2: Top 10 hotels by avg rating (min 50 reviews)           475.67          68.22    0.1x
+                              Q3: Monthly trends            81.11          68.45    0.8x
+              Q4: Filter by hotel and date range             9.38          44.00    4.7x
+                     Q5: Join hotels and reviews           140.57          80.22    0.6x
+
+Q1: Count reviews per year
+Plan (indexed):
+<sqlite3.Row object at 0x111111e10>
+
+
+Q2: Top 10 hotels by avg rating (min 50 reviews)
+Plan (indexed):
+<sqlite3.Row object at 0x115223130>
+<sqlite3.Row object at 0x11593fc10>
+
+
+Q3: Monthly trends
+Plan (indexed):
+<sqlite3.Row object at 0x111111e10>
+<sqlite3.Row object at 0x11593fa00>
+
+
+Q4: Filter by hotel and date range
+Plan (indexed):
+<sqlite3.Row object at 0x10c5d9900>
+<sqlite3.Row object at 0x11593fc40>
+<sqlite3.Row object at 0x11593fc70>
+<sqlite3.Row object at 0x11593fca0>
+
+
+Q5: Join hotels and reviews
+Plan (indexed):
+<sqlite3.Row object at 0x11593fd00>
+<sqlite3.Row object at 0x11593fd30>
+<sqlite3.Row object at 0x11593fd60>
